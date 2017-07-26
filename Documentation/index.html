@@ -1,0 +1,456 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="bootstrap theme, bootstrap template, html5 theme">
+    <meta name="description" content="Free Bootstrap template based on HTML5 and CSS3">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="./css/animate.css"/>
+    <script src="./js/jquery-2.1.0.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/typer.js"></script>
+    <script src="./js/blocs.js"></script>
+    <link rel='stylesheet' href='./css/et-line.min.css'/>
+    <link rel='stylesheet' href='./css/font-awesome.min.css'/>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
+
+    <title>BaseConverter</title>
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+
+    <!-- Navigation Bloc -->
+    <div class="bloc bgc-carmine-pink d-bloc" id="nav-bloc">
+        <div class="container">
+            <nav class="navbar row">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><span class="et-icon-gears icon-sm icon-white zoomIn animated"></span> BaseConverter</a>
+                    <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-1">
+                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                            class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-1">
+                    <ul class="site-navigation nav navbar-nav">
+						<li>
+                            <a  onclick="scrollToTarget('#about')">ABOUT PROJECT</a>
+                        </li>
+                        <li>
+                            <a onclick="scrollToTarget('#porfolio')">PROJECT DEMO</a>
+                        </li>
+						<li>
+                            <a  onclick="scrollToTarget('#services')">PROJECT SERVICES</a>
+                        </li>
+						<li>
+                            <a onclick="scrollToTarget('#team')">TEAM</a>
+                        </li>
+                        <li>
+                            <a onclick="scrollToTarget('#faq')">CODE SEGMENT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navigation Bloc END -->
+
+    <!-- header -->
+    <div class="bloc bgc-outer-space bg-city-overlay d-bloc" id="header">
+        <div class="container bloc-xl">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="text-center mg-lg tc-white">CONVERTER CONVERTS- </h3>
+
+                    <p class="text-center  mg-lg animated fadeInUp animDelay02">
+                        DECIMAL to BINARY, DECIMAL to HEXADECIMAL, BINARY to DECIMAL, BINARY to HEXADECIMAL, HEXADECIMAL to DECIMAL, HEXADECIMAL to BINARY
+                    </p>
+
+                    <div class="text-center">
+                        <a class="btn  btn-xl btn-wire wire-btn-carmine-pink animDelay06 animated fadeInUp"
+                           onclick="scrollToTarget('#about')">PROJECT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header END -->
+
+    <!-- clients -->
+    <div class="bloc bgc-platinum l-bloc" id="about">
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center mg-md ">
+                        ABOUT PROJECT
+                    </h2>
+                    <p class="text-center sub-heading">
+                        small overview about what we did
+                    </p>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-sm-12">
+					<a onclick="scrollToTarget('#faq')">
+						<img src="img/test.jpg" class="" alt="ny-times"/></a>
+                </div> 
+            </div>
+			<div class="row">
+                <div class="col-sm-12">
+					<h4 class="text-center mg-md ">ABOUT COURSE</h4>
+                </div> 
+            </div>
+			<div class="row">
+                <div class="col-sm-3 text-center">
+                    <img src="img/coa.jpg" class="" alt="ny-times"/>
+					<h3 class="text-center mg-md ">course</h3>
+					<p class="text-center sub-heading">
+                        computer organization & architecture
+                    </p>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <img src="img/section.jpg" class="" alt="forbes"/>
+					<h3 class="text-center mg-md ">section</h3><p class="text-center sub-heading">
+                        section: G
+                    </p>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <img src="img/asm.jpg" class="" alt="ny-wired"/>
+					<h3 class="text-center mg-md ">language</h3>
+					<p class="text-center sub-heading">
+                        assembly language
+                    </p>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <img src="img/sir.jpg" class="" alt="guardian"/>
+					<h3 class="text-center mg-md ">supervisor</h3>
+					<p class="text-center sub-heading">
+                        mohammad samawat ullah
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- clients END -->
+	
+    <!-- porfolio -->
+    <div class="bloc l-bloc bgc-white" id="porfolio">
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center mg-md ">
+                        PROJECT DEMO
+                    </h2>
+
+                    <p class="text-center sub-heading">
+                        just some samples of what we did
+                    </p>
+                </div>
+            </div>
+            <div class="row voffset">
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/dtob.png" data-caption="Image description"><img
+                            src="img/dtob.png" class="img-responsive animated zoomIn" alt="portfolio"/></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/dtoh.png" data-caption="Image description"><img
+                            src="img/dtoh.png" class="img-responsive animated zoomIn" alt="portfolio"/></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/btod.png" data-caption="Image description"><img
+                            src="img/btod.png" class="img-responsive animated zoomIn" alt="portfolio"/></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/btoh.png" data-caption="Image description"><img
+                            src="img/btoh.png" class="img-responsive animated zoomIn" alt="portfolio"/></a>
+                </div>
+            </div>
+            <div class="row voffset">
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/htod.png" data-caption="Image description"><img
+                            src="img/htod.png" class="img-responsive animDelay04 animated zoomIn" alt="portfolio"/></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/htob.png" data-caption="Image description"><img
+                            src="img/htob.png" class="img-responsive animated zoomIn animDelay04" alt="portfolio"/></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/wrong.png" data-caption="Image description"><img
+                            src="img/wrong.png" class="img-responsive animDelay04 animated zoomIn" alt="portfolio"/></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-lightbox="img/exit.png" data-caption="Image description"><img
+                            src="img/exit.png" class="animDelay04 animated zoomIn img-responsive" alt="portfolio"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- porfolio END -->
+	
+	<!--Services -->
+	<div class="bloc l-bloc bgc-white" id="services">
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <span class="et-icon-picture icon-xl icon-carmine-pink animated zoomIn animDelay02"></span>
+                    </div>
+                    <h3 class="text-center mg-md ">
+                        16x-bits
+                    </h3>
+
+                    <p class="text-center">
+                        works with 16x-bits in every input&outputs
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <span class="et-icon-gears icon-xl icon-carmine-pink animated zoomIn"></span>
+                    </div>
+                    <h3 class="text-center mg-md ">
+                        Bug-fixed
+                    </h3>
+
+                    <p class="text-center">
+                        shows error message in wrong key press
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <span class="et-icon-linegraph icon-xl icon-carmine-pink animated zoomIn animDelay02"></span>
+                    </div>
+                    <h3 class="text-center mg-md ">
+                        Jump-start
+                    </h3>
+
+                    <p class="text-center">
+                        user can use it until press exit key
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!--Services End -->
+	
+    <!-- team -->
+    <div class="bloc bgc-carmine-pink d-bloc" id="team">
+        <div class="container bloc-sm">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center mg-md ">
+							OUR TEAM
+                    </h2>
+
+                    <p class="sub-heading text-center">
+                        we are a group of skilled individuals
+                    </p>
+                </div>
+            </div>
+            <div class="row voffset-lg">
+                <div class="tpic">
+					
+                    <img src="img/tushar.jpg" class="img-responsive animated zoomIn" alt="member"/>
+
+                    <h3 class="text-center mg-md">
+                        SHAHARIAR, NAIMUL MD.
+                    </h3>
+
+                    <p class="text-center">
+                        15-29137-1
+                    </p>
+                </div>
+                <div class="tpic">
+                    <img src="img/sraboni.jpg" class="img-responsive animated zoomIn animDelay02" alt="member"/>
+
+                    <h3 class="text-center mg-md">
+                        SRABONI, ALFARRAH ISLAM
+                    </h3>
+
+                    <p class="text-center">
+                        15-29167-1
+                    </p>
+                </div>
+                <div class="tpic">
+                    <img src="img/shovon.jpg" class="img-responsive animDelay04 animated zoomIn" alt="member"/>
+
+                    <h3 class="text-center mg-md">
+                        HAUQE, MD. SAMIUL
+                    </h3>
+
+                    <p class="text-center">
+                        15-29172-1
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- team END -->
+
+    <div class="bloc l-bloc" id="faq">
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center mg-md ">
+                        CODE SEGMENT
+                    </h2>
+
+                    <p class="sub-heading text-center">
+                        some functions what we wrote into emu8086
+                    </p>
+                </div>
+            </div>
+            <div class="row voffset-mg">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapseOne" aria-expanded="false">DECIMAL INPUT</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-expanded="false"
+                                 style="height: 0px;">
+                                <div class="panel-body">
+                                    Click here to goto the
+									<a href="decimalin.txt" target="_blank">link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapseTwo" aria-expanded="false">BINARY INPUT</a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+                                <div class="panel-body">
+                                    Click here to goto the
+									<a href="binaryin.txt" target="_blank">link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapseThree" aria-expanded="false">HEXADECIMAL INPUT</a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+                                <div class="panel-body">
+                                    Click here to goto the
+									<a href="hexadecimalin.txt" target="_blank">link</a>
+                                </div>
+                            </div>
+                        </div>
+						<div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapseFour" aria-expanded="false">DECIMAL OUTPUT</a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+                                <div class="panel-body">
+                                    Click here to goto the
+									<a href="decimalout.txt" target="_blank">link</a>
+                                </div>
+                            </div>
+                        </div>
+						<div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapseFive" aria-expanded="false">BINARY OUTPUT</a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+                                <div class="panel-body">
+                                    Click here to goto the
+									<a href="binaryout.txt" target="_blank">link</a>
+                                </div>
+                            </div>
+                        </div>
+						<div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapseSix" aria-expanded="false">HEXADECIMAL OUTPUT</a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+                                <div class="panel-body">
+                                    Click here to goto the
+									<a href="hexadecimalout.txt" target="_blank">link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ScrollToTop Button -->
+    <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
+            class="fa fa-chevron-up"></span></a>
+    <!-- ScrollToTop Button END-->
+
+    <!-- Footer - bloc-8 -->
+    <div class="bloc bgc-platinum l-bloc" id="bloc-8">
+        <div class="container bloc-sm">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                    <div class="col-sm-3 text-center">
+                        <a onclick="scrollToTarget('#team')">
+						<img src="img/t.png" class="img-responsive animDelay04 animated zoomIn" alt="member"/></a>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <a onclick="scrollToTarget('#porfolio')">
+						<img src="img/d.png" class="img-responsive animDelay04 animated zoomIn" alt="member"/></a>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <a  onclick="scrollToTarget('#services')">
+						<img src="img/s.png" class="img-responsive animDelay04 animated zoomIn" alt="member"/></a>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <a onclick="scrollToTarget('#faq')">
+						<img src="img/c.png" class="img-responsive animDelay04 animated zoomIn" alt="member"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-offset-2 text-center mg-md">
+					<p>Developed by -shahariar tushar
+				<br>
+					email- <span style="color:#001BFD;">shahariartushar@gmail.com</span></p>
+				</div>
+				
+            </div>
+    <!-- Footer - bloc-8 END -->
+</div>
+<!-- Main container END -->
+</body>
+
+<!-- Google Analytics -->
+
+<!-- Google Analytics END -->
+
+</html>

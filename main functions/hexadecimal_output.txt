@@ -1,0 +1,116 @@
+
+
+	OUT_HEXAFUN PROC
+		
+		MOV AL,0
+		MOV COUNT,AL
+		
+		XOR DX,DX
+		XOR AX,AX
+		
+		
+		MOV CX,16
+		
+		WHILE:
+			SHL DX,1
+			INC COUNT
+			
+			SHL BX,1
+			JC ONE
+			
+			
+			MOV AX,0
+			JMP CONT
+			
+			ONE:
+				MOV AX,1
+			
+			CONT:
+				OR DX,AX
+				
+				CMP COUNT,4
+				JE PUS
+				JMP LP
+				
+				PUS:
+					PUSH DX
+					XOR DX,DX
+					
+					MOV COUNT,0
+					
+				LP:    
+					LOOP WHILE    
+		
+		
+		OUTP:
+			POP DX
+			
+			CMP DL,10
+			JGE ATEN1
+			
+			ADD DL,30H
+			JMP MOV1
+			
+			ATEN1:
+				ADD DL,37H
+			
+			MOV1:
+				MOV O1,DL
+				
+			POP DX
+			
+			CMP DL,10
+			JGE ATEN2
+			
+			ADD DL,30H
+			JMP MOV2
+			
+			ATEN2:
+				ADD DL,37H
+			
+			MOV2:
+				MOV T2,DL
+			
+			POP DX
+			
+			CMP DL,10
+			JGE ATEN3
+			
+			ADD DL,30H
+			JMP MOV3
+			
+			ATEN3:
+				ADD DL,37H
+			
+			MOV3:
+				MOV T3,DL
+			
+			POP DX
+			
+			CMP DL,10
+			JGE ATEN4
+			
+			ADD DL,30H
+			JMP MOV4
+			
+			ATEN4:
+				ADD DL,37H
+			
+			MOV4:
+				MOV F4,DL
+				
+			
+			PRINT:
+				MOV AH,2
+				MOV DL,F4
+				INT 21H
+				MOV DL,T3
+				INT 21H
+				MOV DL,T2
+				INT 21H
+				MOV DL,O1
+				INT 21H    
+		
+		
+		RET
+	OUT_HEXAFUN ENDP

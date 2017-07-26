@@ -1,0 +1,40 @@
+	
+	
+	INPUT_BINARYFUN PROC
+            
+		XOR AX,AX
+		XOR BX,BX
+		XOR CX,CX
+		XOR DX,DX
+		
+		MOV CX,16
+		
+		INPUT_BIN:
+			 
+			 MOV AH,1
+			 INT 21H
+			 
+			 CMP AL,0DH
+			 JE BREAK
+			 
+			 ;;ERROR TEST
+			 CMP AL,'1'
+			 JG ERROR
+			 
+			 CMP AL,'0'
+			 JL ERROR
+			 ;;;;;;;;;;;;
+			 
+			 SHL BX,1
+				 
+				
+			 SUB AL,30H
+			 OR BL,AL
+			 
+			 LOOP INPUT_BIN
+		
+		 BREAK:
+			
+	
+		RET
+	INPUT_BINARYFUN ENDP

@@ -1,0 +1,55 @@
+		
+		
+	INPUT_HEXAFUN PROC
+            
+		XOR BX,BX
+		XOR CX,CX
+		
+		MOV CX,4
+		
+		WHILE2:
+			
+			MOV AH,1
+			INT 21H
+			
+			CMP AL,0DH
+			JE BREAK3
+			
+			;;ERROR TEST
+			CMP AL,'0'
+			JL ERROR
+			
+			CMP AL,'9'
+			JG STEP1
+			
+			JMP NEXT
+			
+			STEP1:
+				CMP AL,'A'
+				JL ERROR
+				
+				CMP AL,'F'
+				JG ERROR
+	 
+			NEXT:
+			;;;;;;;;;;;;;;
+			SHL BX,4
+			
+			CMP AL,39H
+			JG LETTER
+			
+			SUB AL,30H
+			JMP SHIFT
+			
+			LETTER:
+				SUB AL,37H
+				
+			SHIFT:
+				OR BL,AL
+				
+				LOOP WHILE2
+		
+		BREAK3:
+        
+		RET
+	INPUT_HEXAFUN ENDP

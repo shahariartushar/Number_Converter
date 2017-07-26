@@ -1,0 +1,50 @@
+
+	
+	INPUT_DECIMALFUN PROC    
+   
+		BEGIN1:     
+			XOR BX,BX      
+			
+			MOV AH,1      
+			INT 21H
+			MOV CX,0  
+	
+			REPEAT3:
+				
+				AND AX,000FH      
+				PUSH AX
+									
+				MOV AX,10     
+				MUL BX        
+				POP BX         
+				ADD BX,AX
+				
+				INC CX
+				CMP CX,5
+				JE EXIT1      
+				
+				MOV AH,1    
+				INT 21H
+				
+				CMP AL,0DH   
+				JE EXIT1
+				
+				CMP AL,0DH   
+				JNE REPEATING
+				
+				REPEATING:
+					;;ERROR TEST
+					CMP AL,'0'
+					JL ERROR
+					
+					CMP AL,'9'
+					JG ERROR
+					;;;;;;;;;;;
+					
+					JMP REPEAT3
+					
+				
+				EXIT1:       
+		
+		RET                
+	INPUT_DECIMALFUN ENDP

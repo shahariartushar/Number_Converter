@@ -1,0 +1,24 @@
+	
+	
+	OUT_BINARYFUN PROC
+            
+		MOV AH,2
+		MOV CX,16      
+ 
+		TOPBIN:
+			SHL BX,1       
+			JNC ZEROBIN   
+			
+			MOV DL,49      
+			JMP PRINTBIN   
+			
+			ZEROBIN:          
+				MOV DL,48     
+				
+			PRINTBIN:          
+				INT 21H     
+				LOOP TOPBIN            
+	
+        
+		RET
+	OUT_BINARYFUN ENDP

@@ -1,0 +1,122 @@
+	
+	
+	OUT_DECIMALFUN PROC
+				
+		XOR AX,AX
+		
+		MOV AX,BX
+		
+		
+		CMP AX,9999
+		JG ATENT
+		
+		CMP AX,999
+		JG AONET
+		
+		CMP AX,99
+		JG AONEH
+		
+		CMP AX,9
+		JG ATEN
+		
+		CMP AX,0
+		JGE AZERO
+		
+		CMP AX,0
+		JL UZERO
+		
+		
+		ATENT:
+			
+			XOR DX,DX
+			
+			MOV BX,10000
+			DIV BX
+			
+			MOV REM,DX
+			
+			ADD AL,30H
+			
+			MOV AH,2
+			MOV DL,AL
+			INT 21H
+			
+			MOV AX,REM
+			
+		
+		AONET:
+			
+			XOR DX,DX
+			
+			MOV BX,1000
+			DIV BX
+			
+			MOV REM,DX
+			
+			ADD AL,30H
+			
+			MOV AH,2
+			MOV DL,AL
+			INT 21H
+			
+			MOV AX,REM
+		
+		
+		AONEH:
+			
+			XOR DX,DX
+			
+			MOV BX,100
+			DIV BX
+			
+			MOV REM,DX
+			
+			ADD AL,30H
+			
+			MOV AH,2
+			MOV DL,AL
+			INT 21H
+			
+			MOV AX,REM
+		
+		
+		ATEN:
+			
+			XOR DX,DX
+			
+			MOV BX,10
+			DIV BX
+			
+			MOV REM,DX
+			
+			ADD AL,30H
+			
+			MOV AH,2
+			MOV DL,AL
+			INT 21H
+			
+			MOV AX,REM
+		
+		
+		AZERO:
+			
+			ADD AL,30H
+			
+			MOV AH,2
+			MOV DL,AL
+			INT 21H
+			
+			JMP BREAK2
+		
+		
+		UZERO:
+			
+			MOV AH,9
+			LEA DX,ZEROMSG
+			INT 21H
+			
+		
+		BREAK2:
+			
+		RET
+	OUT_DECIMALFUN ENDP
